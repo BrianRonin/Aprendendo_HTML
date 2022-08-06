@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+
+    <style>
+        .container {
+            width: 100vh;
+
+            position: absolute;
+
+
+            transform: translate(-50% -50%);
+            width: 640px;
+            height: 376px;
+            align-content: center;
+            align-items: center;
+
+
+
+
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        .controle {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            /* visibility: inherit; */
+
+
+        }
+
+        .btn {
+            width: 60px;
+            padding: 10px;
+            position: relative;
+            top: 100%;
+            transform: translateY(-30%);
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--controls coloca controle/autoplay da auto play/ loop da loop, width = largura  src = link do video ou arquivo com ./      poster = link da imagem ou imagem que vai ficar na capa do video                                                         -->
+    <!-- <video preload="auto" controls autoplay loop width="540"  src="./Bryan Fica 1 Dia Sem Mandar Hentai.mp4" poster="./Screenshot_40.png"></video> -->
+    <!-- preload = auto = quando a pagina terminar de carregar o video começa a carregar na memoria do pc
+          none = a pagina só vai carregar quando o usuario dar o play
+          metadata = diferente do auto ao carregar a pagina vai carregar apenas os metadados, tamanho do video, nome do video, autor 
+        !se o autoplay tiver ligado ele sobrescreve o preload -->
+
+
+
+    <div class="container">
+
+        <video id="video" class="video" src="./corona.mp4">
+
+        </video>
+
+        <div class="controle" id="controle" onmouseover="over(this)" onmouseout="out(this)">
+
+            <img class="btn" onclick="retroceder()" src="./image/previous-track.png" alt="">
+            <img class="btn" onclick="avancar()" src="./image/next-track.png" alt="">
+            <img class="btn" onclick="diminuir_vel()" src="./image/fast-backward.png" alt="">
+            <img class="btn" onclick="aumentar_vel()" src="./image/fast-forward.png" alt="">
+            <img class="btn" onclick="play()" src="./image/play.png" alt="">
+            <img class="btn" onclick="sstop()" src="./image/pause.png" alt="">
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

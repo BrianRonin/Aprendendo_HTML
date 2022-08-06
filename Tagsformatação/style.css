@@ -1,0 +1,94 @@
+/* body{
+
+} */
+
+#paragrafos{
+    /* color: red; */
+    background-color: rgba(50, 50, 50, 0.4);
+    
+}
+.subdiv {
+    background-color: yellow;
+}
+
+#titulo{
+    color: aqua;
+}
+
+.texto_verde{
+    color: green;
+}
+
+#cm{
+    background-color: blue;
+    width:1cm;
+    height:1cm;
+}
+#mm{
+    background-color: red;
+    width:1mm;
+    height:1mm;
+}
+#in{
+    background-color: blue;
+    width:1in;
+    height:1in;
+}
+#px{
+    background-color: red;
+    width:10px;
+    height:10px;
+}
+#pt{
+    background-color: blue;
+    width:10pt;
+    height:10pt;
+}
+#pc{
+    background-color: red;
+    width:1pc;
+    height:1pc;
+}
+
+.container{
+    width: 50vmax;
+    background: red;
+}
+
+.inside{
+    width: 100%;
+    background: blue;
+}
+
+#base{
+    height: 10px;
+    background-color: red;
+}
+
+#container2{
+    background-color: blue;
+    color: white;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    
+}
+/* .borda{border: 5px solid black;} */
+.borda{
+    border-width: 5px;
+    border-style: solid;
+    border-right-color: aqua;
+    border-radius: 5px;
+}
+
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+
+}
+
+.dotted {border-top-style: dotted;}
+.dashed {border-style: dashed;}
+.solid {border-style: solid;}
+.none {border-style: none;}
+.hidden {border-style: hidden;}

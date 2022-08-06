@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="https://plugcitarios.com/blog/wp-content/uploads/2013/06/like-310x200.jpg" id="like">
+
+    <br><br>
+
+    <!-- criando lista pelo html  contralando pelo num -->
+    <!-- <ul id="lista" num="10"> -->
+        <ul id="lista" data-num="15" data-id=53>
+    <!-- qualquer item data puxado pro js vem como string -->
+
+
+
+    </ul>
+
+    <script>
+    
+                        // alterando a imagem do like para deslike ao clickar
+    
+        let image = document.getElementById("like");
+    
+        image.addEventListener("click", function(){
+        
+        let lastImage = image.getAttribute("src");
+        image.setAttribute("src", "https://www.meioemensagem.com.br/wp-content/uploads/2016/04/deslike-300x157.jpg")
+    })
+
+
+                        //outra forma de ter o mesmo resultado de trocar a imagem ao clickar
+
+        // image.addEventListener("click", function () {
+    
+        //     image.src = "https://www.meioemensagem.com.br/wp-content/uploads/2016/04/deslike-300x157.jpg"
+    
+        // })
+    
+    
+///////////////////////////////////TRANSFORMANDO LISTA PELO HTML///////////////////////////////////////////////////
+
+        
+
+
+        let lista = document.getElementById("lista");
+//parseInt transforma string em um numero //o data- só deixa mais facil de acessar como
+                                          // lista.dataset.num sem precisar do getAttribute
+  //      let num = parseInt(lista.getAttribute("num"));
+        
+        lista.dataset.num = "9";
+  
+  
+        let num = parseInt(lista.dataset.num);
+
+        let conteudo = ""
+
+        for ( let i = 0; i < num; i++) {
+            conteudo += "<li>" + i + "</li>";
+        }
+
+        lista.innerHTML = conteudo
+
+        console.log(lista.dataset.num)
+
+        
+        
+        let id = lista.dataset.id;
+        console.log(id)
+
+    
+    
+    
+    </script>
+</body>
+
+</html>

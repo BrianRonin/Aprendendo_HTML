@@ -1,0 +1,57 @@
+#serifa{
+    color: red;
+    text-indent: 40px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-shadow: 1px 1px #bbb;
+    font-family: serif;
+}
+#sem_serifa{
+    color: red;
+    text-indent: 40px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-shadow: 1px 1px #bbb;
+    font-family: sans-serif, Arial, "sans-serif";
+    font-weight: 600;
+    font-family: times;
+}
+
+#a32{
+    text-decoration: none;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid;
+    cursor: crosshair;
+    color: black;
+    text-align: center;
+
+}
+
+a:visited{
+    background-color: aqua;
+}
+a:hover{
+    background-color: antiquewhite;
+
+}
+
+a:active{
+    background-color: black;
+}
+
+
+.lista{
+    list-style-type:decimal;
+    list-style-position: inside;
+    margin: 0%;
+    padding-bottom: 5%;
+    /* border: 2px solid; */
+}
+
+li{
+    border-bottom: 2px solid;
+    margin-bottom: 10px;
+}
